@@ -7,6 +7,17 @@
 		<link rel="icon" type="image/x-icon" href="draw/favicon.ico">
 		<script src="text-animation.js"></script>
 		<script src="basic-actions.js"></script>
+		<script>
+			$(document).ready(function(){
+               			$('#top-bar').load('topbar.html');
+				$('#left-bar').load('leftbar.html');
+           		});
+			
+			window.onload = function()
+			{
+				typingLoopFx("www.GorePlus.com", document.getElementById("gorepluscom-digits"), "_", 150, 5000, 10000, true);
+			}
+		</script>
 	</head>
 	<body>
 		<div id="top-bar" class="topBar"><!--Bar at the top-->
@@ -61,12 +72,5 @@
 		</div>
 	</body>
 	<footer>
-		<script>
-			$(document).ready(function(){
-               			$('#top-bar').load('topbar.html');
-				$('#left-bar').load('leftbar.html');
-           		});
-			typingLoopFx("www.GorePlus.com", document.getElementById("gorepluscom-digits"), "_", 150, 5000, 10000, true);
-		</script>
 	</footer>
 </html>
