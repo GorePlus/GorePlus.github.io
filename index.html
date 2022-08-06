@@ -7,11 +7,6 @@
 		<link rel="icon" type="image/x-icon" href="draw/favicon.ico">
 		<script src="text-animation.js"></script>
 		<script src="basic-actions.js"></script>
-		<script>
-			$(document).ready(function(){
-               			$('#top-bar').load('topbar.html');
-           		});
-		</script>
 	</head>
 	<body>
 		<div class="topBar"><!--Bar at the top-->
@@ -78,8 +73,13 @@
 			<h4>Hello World!</h4>
 			<h5>Hello World!</h5>
 		</div>
+	</body>
+	<footer>
 		<script>
+			$(document).ready(function(){
+               			$('#top-bar').load('topbar.html');
+           		});
 			typingLoopFx("www.GorePlus.com", document.getElementById("gorepluscom-digits"), "_", 150, 5000, 10000, true);
 		</script>
-	</body>
+	</footer>
 </html>
