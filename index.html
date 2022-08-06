@@ -12,6 +12,11 @@
                			$('#top-bar').load('topbar.html');
 				$('#left-bar').load('leftbar.html');
            		});
+			
+			window.onload = function()
+			{
+				typingLoopFx("www.GorePlus.com", document.getElementById("gorepluscom-digits"), "_", 150, 5000, 10000, true);
+			}
 		</script>
 	</head>
 	<body>
@@ -59,8 +64,5 @@
 		</div>
 	</body>
 	<footer>
-		<script>
-			typingLoopFx("www.GorePlus.com", document.getElementById("gorepluscom-digits"), "_", 150, 5000, 10000, true);
-		</script>
 	</footer>
 </html>
