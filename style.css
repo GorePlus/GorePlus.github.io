@@ -7,7 +7,7 @@
 
 @font-face {
 	font-family: 'Arial';
-	src: url('Arial.ttf');
+	src: url('fonts/Arial.ttf');
 }
 
 body, html
@@ -286,6 +286,7 @@ a.black:active
 	padding: 7px;
 	border-radius: 3px;
 	transition: 0.3s;
+	font-weight: bold;
 }
 
 .buttonBlue
