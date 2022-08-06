@@ -1,0 +1,364 @@
+@font-face {
+	font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: normal;
+	src: local('Product Sans'), url('fonts/ProductSans-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Arial';
+	src: url('Arial.ttf');
+}
+
+body, html
+{
+    margin: 0;
+	padding: 0;
+	background-color: #F3F3F3;
+}
+
+p
+{
+	font-family: Arial;
+	font-size: 17px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: gray;
+}
+
+h1
+{
+	/*font-family: Product Sans;*/
+	font-family: Arial;
+	line-height: 10px;
+	text-align: center;
+	vertical-align: top;
+}
+
+h2
+{
+	/*font-family: Product Sans;*/
+	font-family: Arial;
+	font-size: 24px;
+	text-align: left;
+	vertical-align: top;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+h3
+{
+	/*font-family: Product Sans;*/
+	font-family: Arial;
+	font-size: 18px;
+	text-align: left;
+	vertical-align: top;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	/*margin-left: 10px;*/
+	/*margin-right: 10px;*/
+}
+
+h4
+{
+	/*font-family: Product Sans;*/
+	font-family: Arial;
+	/*line-height: 14px;*/
+	text-align: center;
+	vertical-align: top;
+	color: #CC0000;
+}
+
+hr
+{
+	border: 0;
+    height: 0;
+    border-top: 1.5px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+a:link
+{
+	color: #64AAFF;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 14;
+}
+a:visited
+{
+	color: #64AAFF;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #64AAFF;
+	text-decoration: underline;
+}
+a:active
+{
+	color: #64AAFF;
+	text-decoration: underline;
+}
+
+a.black:link
+{
+	color: #000000;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 14;
+}
+a.black:visited
+{
+	color: #000000;
+	text-decoration: none;
+}
+a.black:hover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+a.black:active
+{
+	color: #000000;
+	text-decoration: underline;
+}
+
+.topBar
+{
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	height: 75px;
+    z-index: 100;
+}
+
+@media screen and (max-width: 10000px) { 
+
+	.leftBar
+	{
+		background-color: #FFFFFF;
+		position: fixed;
+		top: 75px;
+		width: 250px;
+		bottom: 0px;
+		z-index: 50;
+		box-sizing: border-box;
+		padding: 10px;
+		overflow: auto;
+	}
+	
+	.mainContentBoard
+	{
+		background-color: #00000000;
+		padding-left: 7%;
+		padding-right: 7%;
+		padding-top: 0px;
+		padding-bottom: 10px;
+		position: fixed;
+		top: 75px;
+		right: 0px;
+		left: 250px;
+		bottom: 0px;
+		z-index: 0;
+		overflow: auto;
+	}
+	
+	.centerIn
+	{
+		height: 100%; 
+		display: flex;
+		/*flex-direction: row;*/
+		align-items: center;
+		justify-content: center;
+		flex: 0 1 728px;
+		min-width: 0px;
+	}
+
+	.rightIn
+	{
+		height: 100%; 
+		display: flex;
+		/*flex-direction: row;*/
+		align-items: center;
+		justify-content: right;
+		flex: 0 1 728px;
+		min-width: 0px;
+	}
+
+	.leftIn
+	{
+		height: 100%;
+		width: 10%;
+		display: flex;
+		/*flex-direction: row;*/
+		align-items: center;
+		justify-content: left;
+		flex: 0 1 728px;
+		min-width: 0px;
+	}
+}
+
+@media screen and (max-width: 750px) { 
+	.leftBar
+	{
+		display: none;
+	}
+	
+	.mainContentBoard
+	{
+		background-color: #00000000;
+		padding-left: 7%;
+		padding-right: 7%;
+		padding-top: 0px;
+		padding-bottom: 10px;
+		position: fixed;
+		top: 75px;
+		right: 0px;
+		left: 0px;
+		bottom: 0px;
+		z-index: 0;
+		overflow: auto;
+	}
+	
+	.centerIn
+	{
+		display: none;
+	}
+
+	.rightIn
+	{
+		display: none;
+	}
+
+	.leftIn
+	{
+		height: 100%;
+		width: 100%;
+		display: flex;
+		/*flex-direction: row;*/
+		align-items: center;
+		justify-content: left;
+		flex: 0 1 728px;
+		min-width: 0px;
+		float: center;
+	}
+	
+	.topIcon
+	{
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+
+
+
+
+.contentPanel
+{
+	background-color: #FFFFFF;
+	box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.25);
+	margin-bottom: 20px;
+	/*display: flex;*/
+}
+
+.normalContentSlider
+{
+	height: 150px;
+}
+
+.textInputBox
+{
+	padding: 7px;
+	height: 14px;
+}
+
+.buttonBox
+{
+	height: 32px;
+	font-size: 15px;
+	padding: 7px;
+	border-radius: 3px;
+	transition: 0.3s;
+}
+
+.buttonBlue
+{
+	background: #64AAFF;
+	color: white;
+}
+.buttonBlue:hover
+{
+	background: #64CCFF;
+}
+.buttonBlue:active
+{
+	background: #3277CC;
+}
+
+.buttonWhite
+{
+	background: #FFFFFF;
+	color: black;
+}
+.buttonWhite:hover
+{
+	background: #EEEEEE;
+}
+.buttonWhite:active
+{
+	background: #00000050;
+}
+
+.buttonInvisible
+{
+	background: #00000000;
+	color: black;
+	border: none;
+	overflow: hidden;
+	outline: none;
+}
+.buttonInvisible:hover
+{
+	background: #00000011;
+}
+.buttonInvisible:active
+{
+	background: #00000044;
+}
+
+.buttonLightGray
+{
+	background: #DDDDDD;
+	color: black;
+}
+.buttonLightGray:hover
+{
+	background: #EEEEEE;
+}
+.buttonLightGray:active
+{
+	background: #AAAAAA;
+}
+
+.blueLink
+{
+	color: #64AAFF;
+}
+
+.verified-badge
+{
+	display: inline;
+    background: none;
+    margin-bottom: 1px;
+    padding: 0;
+    padding-left: 4px;
+    flex: none;
+	color: gray;
+}

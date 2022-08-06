@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="jquery-3.6.0.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<title>Gore+</title>
+		<link rel="icon" type="image/x-icon" href="draw/favicon.ico">
+		<script src="text-animation.js"></script>
+		<script src="basic-actions.js"></script>
+	</head>
+	<body>
+		<div class="topBar"><!--Bar at the top-->
+			<div style="height: 75%; width: 100%;">
+				<div class="leftIn" style="float: left;">
+					<!--<button class="buttonBox" style="float: left; height: 100%;">More</button>-->
+					<div style="width: 30px"></div>
+					<img class="topIcon" src="draw/goreplus_icon_red.png" width="40px" style="padding: 7px;"/>
+				</div>
+				<div class="centerIn" style="width: 70%; float: left;">
+					<input class="textInputBox" type="text" placeholder="Search..." style="width: 50%;" />
+					<button class="buttonBox buttonLightGray">Enter</button>
+					<div style="width: 30px"></div>
+					<a href="">See trending</a>
+				</div>
+				<div class="rightIn" style="float: right; width: 20%;">
+					<button class="buttonBox buttonLightGray">Upload</button>
+					<div style="width: 10px"></div>
+					<button class="buttonBox buttonLightGray">Bell</button>
+					<div style="width: 10px"></div>
+					<button class="buttonBox buttonBlue">Profile</button> 
+					<div style="width: 30px"></div>
+				</div>
+			</div>
+			<div style="background-color: #DFDFDF; height: 25%;">
+				<p style="display: inline;"><center>The official Gore+ dark archive</center></p>
+			</div>
+		</div>
+		<div class="leftBar">
+			<h1>1,261,342</h1>
+			<h4>Visitors today</h4>
+			<hr>
+			<h4>Welcome to</h4>
+			<div style="background-color: #000000; padding-right: 20px; padding-left: 20px; border-radius: 10px;" onclick="copy('www.GorePlus.com');" title="Click to copy">
+				<p id="gorepluscom-digits" style="font-family: Product Sans; font-size: 20px; color: #00FF00;"></p>
+			</div>
+			<hr>
+			<h4>Explore Gore+</h4>
+			<div>
+				<button class="buttonBox buttonInvisible blueLink" style="width: 100%; text-align: left; font-size: 16px;">Trending</button>
+				<button class="buttonBox buttonInvisible blueLink" style="width: 100%; text-align: left; font-size: 16px;">Documentaries</button>
+				<button class="buttonBox buttonInvisible blueLink" style="width: 100%; text-align: left; font-size: 16px;">Categories</button>
+				<button class="buttonBox buttonInvisible blueLink" style="width: 100%; text-align: left; font-size: 16px;">Edits&#38;Compilations</button>
+				<button class="buttonBox buttonInvisible blueLink" style="width: 100%; text-align: left; font-size: 16px;">Ranked</button>
+			</div>
+			<hr>
+			<h4>Explore the Deep Cave!</h4>
+			<button class="buttonBox buttonBlue" style="margin: 0 auto; display: block;">Deep Cave</button>
+			<hr>
+			<a href="">About</a>&numsp;<a href="">DMCA</a>&numsp;<a href="">Terms Of Service</a>&numsp;<a href="">Rules</a>
+			<p>&copy;Gore+</p>
+		</div>
+		<div class="mainContentBoard">
+			<div class="contentPanel">
+				<div style="width: 100%; height: 200px; position: relative">
+					<img src="rainforest.jpg" style="width: 100%; height: 100%; position: absolute; object-fit: cover; object-position: center center;">
+					<img src="draw/defaultPfp.jpg" width="80px" style="margin-bottom: 0px; margin-left: 0px; position: relative"/>
+				</div>
+				<div>
+					<div style="display: flex; flex-wrap: wrap; align-items: center;">
+						<h2 style="display: block;">Gore+</h2><div style="display: block; width: 5px;"></div><div id="verified-badge" style="width: 15px; height: 15px; display: block;">
+							<svg viewBox="0 0 24 24" focusable="false" style="width: 15px; height: 15px; fill: gray; margin: 0 auto; display: block;"><g><path d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"></path></g></svg>
+						</div>
+					</div>
+					<a class="black" href="javascript:alert('1,342 followers');"><b>1,342</b> followers</a> <p style="display: inline">|</p> <a class="black" style="display: inline" href="javascript:alert('11 following');"><b>11</b> following</a>
+					<p>@GorePlus</p>
+					<!--<button class="buttonBox buttonBlue" style="display: inline-block; float: right; width: 150px">Follow</button>-->
+				</div>
+			</div>
+			<div class="contentPanel" style="width: 18%; float: right;">
+				<h3>Featured</h3>
+				<p><i>Empty</i></p>
+				<hr>
+				<h3>Related</h3>
+			</div>
+			<div class="contentPanel" style="width: 80%;">
+				<h3>Highlighted content</h3>
+				<div class="normalContentSlider">
+				
+				</div>
+			</div>
+			<div class="contentPanel" style="width: 80%;">
+				<h3>Channel content</h3>
+				<div class="normalContentSlider">
+				
+				</div>
+				<hr>
+				<h3>Playlists</h3>
+				<div class="normalContentSlider">
+				
+				</div>
+				<hr>
+				<h3>Posts</h3>
+				<div class="normalContentSlider">
+				
+				</div>
+			</div>
+		</div>
+		<script>
+			typingLoopFx("www.GorePlus.com", document.getElementById("gorepluscom-digits"), "_", 150, 5000, 10000, true);
+		</script>
+	</body>
+</html>
